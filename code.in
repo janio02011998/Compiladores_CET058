@@ -1,0 +1,15 @@
+int $numero 
+int $aux = 0 
+
+$numero = system.input()
+
+system.if $numero < 0 {
+   return "Numero negativo, não é possivel realizar o somatorio de 1 até n"
+}
+
+system.while $numero >= 1 {
+      $aux = $numero + $aux 
+      $numero = $numero - 1
+}
+
+system.print($aux)
